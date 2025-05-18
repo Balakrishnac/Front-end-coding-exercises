@@ -1,0 +1,17 @@
+<div>
+<h1>Parent Component Template</h1>
+<p>This template includes the child component and binds data to it.</p>
+
+<h2>Parent Component HTML</h2>
+<pre>
+&lt;div class="parent-container"&gt;
+  &lt;h1&gt;Parent Component&lt;/h1&gt;
+  &lt;button (click)="updateData()"&gt;Update Data&lt;/button&gt;
+  &lt;child-component 
+    [data]="childData" 
+    (changeDetection)="logChangeDetection()"
+    [trackBy]="trackByFn"&gt;
+  &lt;/child-component&gt;
+&lt;/div&gt;
+</pre>
+</div>
